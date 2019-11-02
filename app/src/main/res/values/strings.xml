@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">college-timetable</string>
+    <string name="baseUrl">https://k03c8j1o5a.execute-api.ap-northeast-2.amazonaws.com/v1/programmers</string>
 </resources>
