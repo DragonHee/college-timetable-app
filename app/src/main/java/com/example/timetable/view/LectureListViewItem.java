@@ -5,9 +5,22 @@ public class LectureListViewItem {
     private String startTime;
     private String endTime;
     private String dayOfWeek;
-    private String classCOde;
+    private String classCode;
     private String professorName;
     private String location;
+
+    public LectureListViewItem(){
+
+    }
+    public LectureListViewItem(String subjectName, String startTime, String endTime, String dayOfWeek, String classCode, String professorName, String location) {
+        this.subjectName = subjectName;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.dayOfWeek = dayOfWeek;
+        this.classCode = classCode;
+        this.professorName = professorName;
+        this.location = location;
+    }
 
     public String getSubjectName() {
         return subjectName;
@@ -41,12 +54,12 @@ public class LectureListViewItem {
         this.dayOfWeek = dayOfWeek;
     }
 
-    public String getClassCOde() {
-        return classCOde;
+    public String getClassCode() {
+        return classCode;
     }
 
-    public void setClassCOde(String classCOde) {
-        this.classCOde = classCOde;
+    public void setClassCode(String classCOde) {
+        this.classCode = classCOde;
     }
 
     public String getProfessorName() {

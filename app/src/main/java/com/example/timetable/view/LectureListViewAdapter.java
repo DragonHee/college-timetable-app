@@ -64,7 +64,7 @@ public class LectureListViewAdapter extends BaseAdapter {
         startTimeTextView.setText(listViewItem.getStartTime());
         endTimeTextView.setText(listViewItem.getEndTime());
         dayOfWeekTextView.setText(listViewItem.getDayOfWeek());
-        classCodeTextView.setText(listViewItem.getClassCOde());
+        classCodeTextView.setText(listViewItem.getClassCode());
         professorNameTextView.setText(listViewItem.getProfessorName());
         locationTextView.setText(listViewItem.getLocation());
 
@@ -79,7 +79,7 @@ public class LectureListViewAdapter extends BaseAdapter {
         item.setStartTime(startTime);
         item.setEndTime(endTime);
         item.setDayOfWeek(dayOfWeek);
-        item.setClassCOde(classCode);
+        item.setClassCode(classCode);
         item.setProfessorName(professorName);
         item.setLocation(location);
 
