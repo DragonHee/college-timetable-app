@@ -9,14 +9,17 @@ import android.widget.TextView;
 
 import com.example.timetable.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class LectureListViewAdapter extends BaseAdapter {
-    private List<LectureListViewItem> lectureListViewItemList = new ArrayList<LectureListViewItem>();
+    private List<LectureListViewItem> lectureListViewItemList;
+    private Context context;
+    private LayoutInflater inflate;
 
-    public LectureListViewAdapter(){
-
+    public LectureListViewAdapter(List<LectureListViewItem> list, Context context){
+        this.lectureListViewItemList = list;
+        this.context = context;
+        this.inflate = LayoutInflater.from(context);
     }
     @Override
     public int getCount() {
@@ -71,18 +74,7 @@ public class LectureListViewAdapter extends BaseAdapter {
         return convertView;
     }
 
-    // 아이템 데이터 추가를 위한 함수. 개발자가 원하는대로 작성 가능.
-    public void addItem(String subjectName, String startTime, String endTime, String dayOfWeek, String classCode, String professorName, String location) {
-        LectureListViewItem item = new LectureListViewItem();
-
-        item.setSubjectName(subjectName);
-        item.setStartTime(startTime);
-        item.setEndTime(endTime);
-        item.setDayOfWeek(dayOfWeek);
-        item.setClassCode(classCode);
-        item.setProfessorName(professorName);
-        item.setLocation(location);
-
-        lectureListViewItemList.add(item);
+    public List<LectureListViewItem> getList(){
+        return lectureListViewItemList;
     }
 }

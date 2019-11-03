@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:textColor="#2B3B4B"
+            android:textColor="#000000"
             android:paddingLeft="30dp"
             android:text="시간표"
             android:textStyle="bold"
@@ -63,10 +63,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="30dp"
-                android:text="2019년 11월"
+                android:id="@+id/year_and_month"
                 android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_gravity="left">
             </TextView>
 
@@ -92,16 +92,16 @@
                     android:background="@drawable/rounded"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:textStyle="bold"
-                    android:text="오늘"
+                    android:id="@+id/changed_week_time_textview"
                     android:paddingHorizontal="5dp"
                     android:textColor="#000000"
                     android:background="@drawable/rounded"
                     android:layout_marginRight="2dp"
-                    android:textSize="20dp">
+                    android:textSize="15dp">
                 </TextView>
 
                 <ImageButton
@@ -144,14 +144,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text = "Mon"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="#A8B5C4"
                     android:gravity="center_horizontal"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text = "4"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
+                    android:id="@+id/mondayTextView"
                     android:textColor="#A8B5C4"
                     android:gravity="center_horizontal"/>
         </LinearLayout>
@@ -166,14 +166,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text = "Tue"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="#A8B5C4"
                 android:gravity="center_horizontal"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text = "5"
-                android:textSize="20dp"
+                android:id="@+id/tuesdayTextView"
+                android:textSize="15dp"
                 android:textColor="#A8B5C4"
                 android:gravity="center_horizontal"/>
         </LinearLayout>
@@ -188,14 +188,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text = "Wed"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="#A8B5C4"
                 android:gravity="center_horizontal"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text = "6"
-                android:textSize="20dp"
+                android:textSize="15dp"
+                android:id="@+id/weddayTextView"
                 android:textColor="#A8B5C4"
                 android:gravity="center_horizontal"/>
         </LinearLayout>
@@ -210,14 +210,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text = "Thu"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="#A8B5C4"
                 android:gravity="center_horizontal"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text = "7"
-                android:textSize="20dp"
+                android:textSize="15dp"
+                android:id="@+id/thurdayTextView"
                 android:textColor="#A8B5C4"
                 android:gravity="center_horizontal"/>
         </LinearLayout>
@@ -232,14 +232,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text = "Fri"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="#A8B5C4"
                 android:gravity="center_horizontal"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text = "8"
-                android:textSize="20dp"
+                android:textSize="15dp"
+                android:id="@+id/fridayTextView"
                 android:textColor="#A8B5C4"
                 android:gravity="center_horizontal"/>
         </LinearLayout>
@@ -338,7 +338,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_weight="1.5"
                     android:text="18"
                     android:textColor="#A8B5C4"
                     android:gravity="right"

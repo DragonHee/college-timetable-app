@@ -77,4 +77,5 @@ public class LectureListViewItem {
     public void setLocation(String location) {
         this.location = location;
     }
+
 }

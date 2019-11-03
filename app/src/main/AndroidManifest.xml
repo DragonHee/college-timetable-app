@@ -18,8 +18,10 @@
         </activity>
 
         <activity android:name=".SearchLectureActivity">
-
+        
         </activity>
+        
+        <activity android:name=".SelectedLectureInformationActivity"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
